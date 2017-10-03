@@ -18,7 +18,7 @@ public class DebugThirteen1
          System.out.println("File: " + file1.getFileName());
          System.out.println("Creation time " + attr1.CreationTime());
          System.out.println("Last modified time " + attr1.lastModifiedTime());
-         System.out.println("Size " + attr1.sze());
+         System.out.println("Size " + attr1.size());
          BasicFileAttributes attr2 =
             Files.readAttributes(file2, BasicFileAttributes.class);
          System.out.println("\nFile: " + file2.getFileName());
@@ -32,7 +32,7 @@ public class DebugThirteen1
          if(attr1.size() > attr2.size())
             System.out.println(file1.getFileName() + " is larger ");
          else
-            System.out.println(file3.getFileName() + " is not larger");
+            System.out.println(file2.getFileName() + " is not larger");
       }
       catch(IOException e)
       {
